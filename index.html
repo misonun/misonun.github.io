@@ -2,8 +2,8 @@
 <html>
 <head>  
 <meta charset="UTF-8">
-<link rel="stylesheet" href="https://github.com/misonun/misonun.github.io/blob/top.css">
-<title>2Jsite</title>
+<link rel="stylesheet" href="top.css">
+<title>Goiexam</title>
 </head>
 
 <section class="quiz_box">
@@ -26,37 +26,37 @@
 <script>
 const quiz = [
             {
-                questionNumber: '質問1',
-                question: '免許センターがある市は？',
+                questionNumber: '問題1',
+                question: '『摂理』の正しい使い方は？',
                 answers: [
-                    'a.鴻巣',
-                    'b.戸田',
-                    'c.熊谷',
+                    'a.神の摂理を疑ってはいけない',
+                    'b.自己自身の主体的な摂理を確立した',
+                    'c.摂理のよしあしが国民にかかっている',
 
                 ],
-                correct: 'a.鴻巣'
+                correct: 'a.神の摂理を疑ってはいけない'
             },
             {
-                questionNumber: '質問2',
-                question: '高校受験前に受けるテストは？',
+                questionNumber: '問題2',
+                question: '『是非に』の慣用的な使い方として誤っているのは？',
                 answers: [
-                    'a.北辰テスト',
-                    'b.南辰テスト',
-                    'c.東辰テスト',
+                    'a.是非に関わらず',
+                    'b.是非に及ばず',
+                    'c.是非にとっては',
 
                 ],
-                correct: 'a.北辰テスト'
+                correct: 'c.是非にとっては'
             },
             {
-                questionNumber: '質問3',
-                question: 'シラコバトをモチーフにしたマスコットキャラは？',
+                questionNumber: '問題3',
+                question: '『瀬踏み』の説明で誤っているのは？',
                 answers: [
-                    'a.コバコバ',
-                    'b.シラバト',
-                    'c.コバトン',
+                    'a.試してみること',
+                    'b.背中を踏むこと',
+                    'c.川の深さを測ること',
 
                 ],
-                correct: 'c.コバトン'
+                correct: 'b.背中を踏むこと'
             },
         ]
  
@@ -112,7 +112,8 @@ const quiz = [
                 }
                 else {
                     answerResult.classList.add("active_result")
-                    answerResultText.textContent = '終了！あなたの正解数は' + score + '/' + quizLength + 'です！'
+                    answerResultText.textContent = '終了'
+                    answerResultText.textContent = 'あなたの正解数は' + score + '/' + quizLength + 'です'
                 }
             });            
             clickedCount++;
